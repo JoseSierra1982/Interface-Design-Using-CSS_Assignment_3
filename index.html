@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Favorite Candy - Bon Bon Bum</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap">
+</head>
+<body>
+  <header class="banner">
+    <h1>Bon Bon Bum</h1>
+  </header>
+
+  <main>
+    <section class="candy-info">
+      <h2>The Sweetest Treat</h2>
+      <img src="images/bonbum.jpg" alt="Bon Bon Bum Candy">
+      <p>One of our most iconic brands, Bon Bon Bum has gone beyond the boundaries of traditional candy ever since its creation. 
+         Each lollipop has a hard and colorful candy exterior that holds a delightful chewy surprise as you make your way to the center.
+         Designed to feel like an intense flavor boom, these pops have all sorts of flavors, from sour and face-twitching cherry or 
+         green apple to fruity and tropical delicacies like passion fruit and watermelon to richly sweet mango and strawberry flavors.</p>
+    </section>
+
+    <section class="candy-love">
+      <h2>Why I Love It</h2>
+      <ul>
+        <li>Designed to feel like an intense flavor boom (hover over me for a surprise!)</li>
+        <li>These pops have all sorts of flavors</li>
+        <li>Delved into guarana-infused lollipops</li>
+      </ul>
+    </section>
+
+    <section class="candy-fun-fact">
+      <h2>Did You Know?</h2>
+      <div class="two-column-layout">
+        <div class="video-column">
+          <iframe class="video-container" width="200" height="200" src="https://www.youtube.com/embed/htC0JVj4f-E" title="Bon Bon Bum Lollipop Candy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+        </div>
+        <div class="text-column">
+          <p>In 1970, Colombina created the first round bubble gum filled lollipop known worldwide as Bon Bon Bum, with its novel taste of strawberry and a soft gum inside. It quickly became the company's flagship item and a favorite among consumers of all ages.</p>
+        </div>
+      </div>
+    </section>
+    
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <img src="images/logo.png" alt="Company Logo">
+      <div class="vertical-text">
+      
+        <p>Company Information</p>
+        <p>Colombina Colombia</p>
+        <p>Main Office: Bogota,Cundinamarca</p>
+        <p>Contact: +57315678790</p>
+      
+      </div>
+      <form>
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Leave a comment"></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </footer>
+
+  <script>
+    // Add hover effects with Javascript
+    const loveList = document.querySelectorAll('.candy-love li');
+    const loveList1 = document.querySelectorAll('.candy-info p');
+    loveList.forEach(listItem => {
+      listItem.addEventListener('mouseover', () => {
+        listItem.style.color = 'violet';
+      });
+      listItem.addEventListener('mouseout', () => {
+        listItem.style.color = 'black';
+      });
+    });
+    loveList1.forEach(listItem => {
+      listItem.addEventListener('mouseover', () => {
+        listItem.style.color = 'lightseagreen';
+      });
+      listItem.addEventListener('mouseout', () => {
+        listItem.style.color = 'black';
+      });
+    });
+    const firstListItem = document.querySelector('.candy-love li:first-child');
+    firstListItem.addEventListener('mouseover', () => {
+      alert('Surprise! The flavor explodes in your mouth!');
+    });
+
+  </script>
+</body>
+
+</html>

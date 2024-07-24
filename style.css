@@ -1,0 +1,156 @@
+/* General styles */
+body
+ {
+  font-family: 'Pacifico', cursive;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+header h1
+{
+  color:blueviolet
+}
+h1, h2 {
+  margin-bottom: 10px;
+}
+/* Main content */
+main {
+  width: 100%;
+  max-width: 1000px;
+  background: linear-gradient(to right, #ffc1cc, #ff9999);
+  border-radius: 10px;
+  padding: 20px;
+}
+section {
+  margin-bottom: 20px;
+}
+section.candy-fun-fact h2
+{
+  font-weight: bold  ;
+  color:deeppink ;
+  text-align: center; 
+}
+section.candy-info h2
+{
+ color:cyan;
+ text-align: center;
+ 
+}
+section.candy-love h2
+{
+  color: darkseagreen;
+  text-align: center;
+}
+.video-column {
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  border: 5px solid #ff9999;
+  border-radius: 10px;
+  width: 50%;
+}
+/* Candy info image hover effect */
+.candy-info img {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  border-radius: 5px;
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+.candy-info img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(255, 153, 153, 0.8);
+}
+/* Candy info list */
+.candy-love ul {
+  list-style: none;
+  padding: 0;
+}
+.candy-love li {
+  margin-bottom: 10px;
+  background-image: url("images/candy_pattern.png");
+  background-repeat: repeat;
+  background-position: left;
+  padding-left: 20px;
+}
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-top: 1px solid #ddd;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.footer-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow elements to wrap on smaller screens */
+  width: 100%;
+}
+footer img {
+  width: 100px;
+  margin-right: 20px; /* Add margin for spacing */
+}
+footer .vertical-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align text vertically */
+  
+}
+footer p {
+  margin: 0 5px; /* Adjust margins for spacing */
+  font-size: 0.8em;
+  color:darkseagreen;
+  text-align: center;
+}
+footer form {
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Take up full width */
+}
+footer label {
+  font-size: 0.8em;
+  color:darksalmon;
+  margin-bottom: 5px;
+}
+footer input,
+footer textarea {
+  border: 1px solid #ccc;
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+}
+footer button {
+  background-color: #ff9999;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  
+}
+
+.two-column-layout {
+  display: flex; /* Enable flexbox layout */
+}
+
+.video-column,
+.text-column {
+  flex: 1; /* Make columns equally sized */
+  padding: 10px; /* Add some padding for spacing */
+}
+
+
